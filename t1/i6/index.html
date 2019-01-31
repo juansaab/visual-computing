@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <script>
+    setup = function() {
+      createCanvas(600, 350);
+    }
+
+    draw = function () {
+      background(255);
+      strokeWeight(3);
+      if (mouseIsPressed) {
+        // Draw arrow lines
+        line(100, 100, 150, 150);
+        line(100, 100, 150, 45);
+        line(500, 100, 450, 45);
+        line(500, 100, 450, 150);
+        line(100, 250, 45, 195);
+        line(100, 250, 45, 300);
+        line(500, 250, 545, 205);
+        line(500, 250, 545, 295);
+      }
+
+      // Draw base lines
+      line(100, 100, 500, 100);
+      line(100, 250, 500, 250);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="sketch-holder">
+    <!-- Our sketch will go here! -->
+  </div>
+</body>
+
+</html>

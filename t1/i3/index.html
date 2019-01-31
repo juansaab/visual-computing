@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <script>
+    var theta = 0.01;
+
+    setup = function () {
+      var canvas = createCanvas(300, 300);
+      canvas.parent('sketch-holder');
+      noStroke();
+    }
+
+    circle = function (i) {
+      if (i == 15) return;
+      fill(255, 255, 0);
+      if (i % 2 == 0) { fill(0, 0, 255); }
+      var j = (i > 7) ? -10 : 10;
+      translate(j, 0);
+      ellipse(0, 0, 260 - (i * 20), 260 - (i * 20));
+      circle(i + 1);
+    }
+
+    draw = function () {
+      background(0);
+      translate(width / 2, height / 2);
+      rotate(theta);
+      if (keyIsDown(RIGHT_ARROW)) {
+        theta = theta + 0.05;
+      }
+      if (theta >= 2 * PI) theta = 0;
+      circle(0);
+
+    }
+  </script>
+</head>
+
+<body>
+  <div id="sketch-holder">
+    <!-- Our sketch will go here! -->
+  </div>
+</body>
+
+</html>

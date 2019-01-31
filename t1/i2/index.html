@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+</head>
+
+<body>
+  <div id="sketch-holder">
+    <!-- Our sketch will go here! -->
+  </div>
+</body>
+<script>
+  setup = function () {
+    var canvas = createCanvas(500, 500);
+    canvas.parent('sketch-holder');
+  }
+  draw = function () {
+    background(255);
+    scale(0.65)
+    noStroke();
+    fill(247, 119, 38);
+    ellipse(270, 400, 70, 70);
+    ellipse(670, 400, 70, 70);
+    if (!mouseIsPressed) {
+      fill(99, 120, 147);
+
+      //left rose
+      ellipse(190, 270, 150, 150);
+      ellipse(350, 270, 150, 150);
+      ellipse(190, 530, 150, 150);
+      ellipse(350, 530, 150, 150);
+      ellipse(100, 400, 150, 150);
+      ellipse(440, 400, 150, 150);
+
+      //right rose
+      ellipse(605, 400, 40, 40);
+      ellipse(735, 400, 40, 40);
+      ellipse(670, 465, 40, 40);
+      ellipse(670, 335, 40, 40);
+      ellipse(620, 450, 40, 40);
+      ellipse(720, 450, 40, 40);
+      ellipse(620, 350, 40, 40);
+      ellipse(720, 350, 40, 40);
+    }
+  }
+</script>
+
+</html>
