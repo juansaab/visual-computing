@@ -9,7 +9,6 @@ Comprender algunos aspectos fundamentales de la [inferencia inconsciente](https:
 Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométricas, ambiguas, etc.), al menos dos con movimiento y dos con interactividad.
 
 ## Integrantes
-(máximo dos)
 
 Complete la tabla:
 
@@ -31,6 +30,8 @@ Complete la tabla:
 | Müller-Lyer | Paradójica | https://en.wikipedia.org/wiki/Müller-Lyer_illusion | Clic para desactivar | |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar:
+
+Para este taller las referencias y temas se añadieron en el [blog de desarrollador](https://juansaab.github.io/optical-illusions-using-p5-js/)
 
 ## Entrega
 
