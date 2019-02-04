@@ -1,3 +1,6 @@
 [submodule "t2"]
 	path = t2
 	url = git@github.com:juansaab/Raster_ws.git
+[submodule "t3"]
+	path = t3
+	url = git@github.com:juansaab/representation_ws.git
