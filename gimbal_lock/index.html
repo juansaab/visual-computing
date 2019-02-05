@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <script src="https://rawgit.com/diwi/p5.EasyCam/master/p5.easycam.min.js"></script>
+</head>
+
+<body>
+  <div id="sketch-holder">
+    <!-- Our sketch will go here! -->
+  </div>
+</body>
+<script>
+  anglex = 0;
+  angley = 0;
+  anglez = 0;
+  var easycam;
+  setup = function () {
+    var canvas = createCanvas(500, 500, WEBGL);
+    canvas.parent('sketch-holder');
+    easycam = createEasyCam();
+  }
+  draw = function () {
+    background(0);
+    
+    // Q, W, E for X, Y, Z axis
+    if (keyIsDown(81)) {
+      anglex += 0.025;
+    } else if (keyIsDown(87)) {
+      angley += 0.025;
+    } else if (keyIsDown(69)) {
+      anglez += 0.025;
+    }
+    else if (keyIsDown(UP_ARROW)) {
+      anglex += 0.025;
+      angley += 0.025;
+      anglez += 0.025;
+    }
+
+    push();
+    stroke('red');
+    line(-200, 0, 0, 200, 0, 0);
+    strokeWeight(2);
+    noFill()
+    rotateX(anglex);
+    rotateY(angley);
+    rotateZ(anglez);
+    rectMode(CENTER)
+    rect(0, 0, 150, 150);
+    pop();
+
+    push();
+    stroke('yellow');
+    line(0, -200, 0, 0, 200, 0);
+    strokeWeight(2);
+    noFill()
+    rotateY(angley);
+    rotateZ(anglez);
+    rectMode(CENTER)
+    rect(0, 0, 150, 150);
+    pop();
+
+    push();
+    stroke('blue');
+    line(0, 0, -200, 0, 0, 200);
+    strokeWeight(2);
+    noFill()
+    rotateZ(anglez);
+    rectMode(CENTER)
+    rect(0, 0, 150, 150);
+    pop();
+  }
+</script>
+
+</html>
