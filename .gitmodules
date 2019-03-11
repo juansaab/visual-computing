@@ -7,3 +7,6 @@
 [submodule "t4"]
 	path = t4
 	url = git@github.com:juansaab/interaction_ws.git
+[submodule "t5"]
+	path = t5
+	url = git@github.com:juansaab/shaders_ws.git
