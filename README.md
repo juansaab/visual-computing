@@ -13,6 +13,8 @@ Currently, these are the exersices developed.
 | T4 | Interaction | https://github.com/juansaab/interaction_ws | Using an emotion detection algorythm to control an scene. p5js + clmtrackr | 
 | T5 | Shaders |https://github.com/juansaab/shaders_ws | Benchmark entre la implementación por software y la de shaders de varias máscaras de convolución aplicadas a imágenes |
 
+[Transformation + Shaders Slides](https://docs.google.com/presentation/d/10zoZnaBD3ZQvtfWP6fMsehTHnavFheXAhOJhT2rOiIw/edit?usp=sharing)
+
 ### Extras
 | Name | URL | Description |
 | -- | -- | -- |
